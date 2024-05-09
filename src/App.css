@@ -1,0 +1,67 @@
+body {
+  background-image: url("../src/for\ calc.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.App{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  color: #FF70AB;
+}
+
+.container{
+  width: 250px;
+  height: 350px;
+  margin-top: 100px;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: black;
+  
+}
+
+input[type="text"] {
+  width: 220px;
+  height: 60px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #FFE6E6;
+  border: none;
+  color: black;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.keypad{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(6px, auto);
+}
+
+button {
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #FFE6E6;
+  border-radius: 5px;
+}
+
+#equal {
+  grid-column: 3/5;
+}
+
+.highlight {
+  background-color: #FF70AB;
+}
